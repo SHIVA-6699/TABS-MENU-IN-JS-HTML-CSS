@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f0fc3315-3190-4dd5-b8ff-2445b0841a88" name="SHIVA" url="http://shiva">
+        <fileTransfer accessType="SFTP" sshConfigId="c5a00bfb-1380-4f48-b740-b084a90f240e" sshConfig="SHIVA">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

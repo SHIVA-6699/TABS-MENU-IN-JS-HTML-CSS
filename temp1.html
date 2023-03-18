@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="tab-container">
+    <div class="buttons">
+    <button onclick="show(0,'green')">
+        tAB1
+   </button>
+    <button  onclick="show(1,'red')">Tab2</button>
+    <button  onclick="show(2,'blue')">Tab3</button>
+    <button  onclick="show(3,'orange')">Tab4</button>
+</div>
+
+        <div class="tabpanel">tab panel1
+            <p>ssgfd</p>
+            <p>456</p>
+        </div>
+        <div class="tabpanel">Tab panel2</div>
+        <div class="tabpanel">Tab panel3</div>
+        <div class="tabpanel">Tab panel4</div>
+
+
+
+</div>
+<script>
+    var tagbutton=document.querySelectorAll(".tab-container .buttons button");
+    var panel=document.querySelectorAll(".tab-container .tabpanel");
+    function show(panelIndex,Color)
+    {
+        tagbutton.forEach(
+            function (node)
+            {
+                node.style.backgroundColor="pink";
+                node.style.color="voliet";
+
+            }
+        );
+        tagbutton[panelIndex].style.backgroundColor=Color;
+        tagbutton[panelIndex].style.color="white";
+
+    //     panels
+        panel.forEach(
+            function (node)
+            {
+                node.style.display="none";
+
+            }
+        );
+        // panel[panelIndex].style.backgroundColor=Color;
+        panel[panelIndex].style.display="flex";
+        panel[panelIndex].style.flexFlow="row";
+        panel[panelIndex].style.gap="1rem";
+       
+    }
+    show(0,"green");
+</script>
+<style>
+
+    .tab-container
+    {
+        width: 100%;
+        height: 350px;
+    }
+    .tab-container .buttons
+    {
+
+        height:15%;
+
+
+    }
+
+    .tab-container .buttons button
+    {
+        width:15%;
+        outline: none;
+        height: 64%;
+       float: left  ;
+        padding: 10px;
+        border:none;
+        background:#eee;
+        fontsize:24px;
+        cursor:pointer;
+    }
+    .tab-container .panels
+    {
+        display: none;
+        cursor: pointer;
+    }
+    .tabpanel
+    {
+        display: none;
+        height: 50%;
+    }
+    .tabpanel:hover
+    {
+
+    }
+</style>
+</body>
+</html>

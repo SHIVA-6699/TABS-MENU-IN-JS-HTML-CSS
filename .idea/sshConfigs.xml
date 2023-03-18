@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" id="c5a00bfb-1380-4f48-b740-b084a90f240e" customName="SHIVA" nameFormat="CUSTOM" useOpenSSHConfig="true">
+        <option name="customName" value="SHIVA" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>
